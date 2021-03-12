@@ -35,7 +35,7 @@ RUN 	mkdir -p $KALIBR_WORKSPACE/src &&\
 	catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release
 
 RUN 	cd $KALIBR_WORKSPACE/src &&\
-	git clone https://github.com/stereolabs/Kalibr.git
+	git clone https://github.com/yanhuicm/kalibr.git
 
 RUN	cd $KALIBR_WORKSPACE &&\
 	catkin build -DCMAKE_BUILD_TYPE=Release -j$(nproc)

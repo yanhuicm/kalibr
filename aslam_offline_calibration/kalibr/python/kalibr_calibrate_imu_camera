@@ -125,6 +125,8 @@ def parseArgs():
 def main():
     # Parse the arguments
     parsed = parseArgs();
+    print(parsed.imu_yamls)
+    exit()
     
     #logging modess
     if parsed.verbose:
